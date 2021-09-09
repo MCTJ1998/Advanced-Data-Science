@@ -1,30 +1,58 @@
 ---
-title: "first_class"
+title: "About Me: Cande Torres"
 author: "Cande Torres"
-date: "9/2/2021"
-output: html_document
+date: "9/9/2021"
+site: distill::distill_website
+output: 
+  html_document:
+    theme: flatly
+    toc: TRUE
+    toc_float: TRUE
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+  comment=NA
+  warning = FALSE
+  message =FALSE
 ```
 
-## R Markdown
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+# Goals for this Website
+- Presentation in portfolio style and organization for previous work 
+- Facilitate collaboration among students 
+- Practice Data Science and Coding skills. 
 
-```{r cars}
-summary(cars)
-```
+# Education
 
-## Including Plots
+## College 
+- Macalester College, St. Paul MN. U.S                  
+- GPA: 3.89                  
+- Bachelor of Arts Expected December 2021      
 
-You can also embed plots, for example:
+## Majors: 
+International Studies and Political Science. 
+## Concentrations:
+HRH and International Development 
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+## Honors: 
+Kofi Annan scholarship awarded for history of academic and personal excellence. Davis Scholarship awarded to successful graduates from United World College to perpetuate the diversity mission in institutions for higher education. Dean’s list Fall 2018, Spring 2019, Fall 2019. Spring 2020, Fall 2020.
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+## Coursework: 
+
+Intl. Codes of Conduct, Intro to Data Science, Empirical Research Methods, Statistical Modelling, Political Economy of Development, Core Concepts of Computer Science. 
+
+## Highschool 
+
+- United World College, Changshu China    
+- International Baccalaureate (IB) Bilingual Diploma completed June 2018 
+- Scholarship granted by the Argentine National Committee to attend UWC for 2 years along with peers from 100+ countries. 
+
+
+
+# Contact 
+
+Email me at mtorresj@macalester.edu 
+
+
