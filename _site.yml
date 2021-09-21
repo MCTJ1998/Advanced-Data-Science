@@ -1,21 +1,13 @@
-navbar:
-  title: Cande Torres
+navbar: 
+  title: Cande
   left:
-  - text: Tidy Tuesday
+  - text: Project Idea
+    href: ProjectIdea.html
+  - text: TidyTuesday
     menu: 
-      - text: Formula 1 Race
-      href: TidyTuesday1.html
-  - text: Project
-    menu: 
-    - text: Motivation
-      
-    - text: Data Cleaning 
-      
-output:
-    html_document:
-      toc: true
-      toc_float: true
-      code_download: true
-      theme: flatly
-      
+    - text: TidyTuesday2
+      href: TidyTuesday2.html
+output: html_document
+
+
     

@@ -1,13 +1,8 @@
 ---
 title: "About Me: Cande Torres"
-author: "Cande Torres"
-date: "9/9/2021"
-site: distill::distill_website
 output: 
   html_document:
     theme: flatly
-    toc: TRUE
-    toc_float: TRUE
 ---
 
 ```{r setup, include=FALSE}
@@ -17,11 +12,14 @@ knitr::opts_chunk$set(echo = TRUE)
   message =FALSE
 ```
 
-
+<center>
+![Me](portrait.jpg){width=50%}
+</center>
 
 # Goals for this Website
-- Presentation in portfolio style and organization for previous work 
-- Facilitate collaboration among students 
+- Present my CV for future employers
+- Present and organize previous work in portfolio style 
+- Facilitate collaboration among other students 
 - Practice Data Science and Coding skills. 
 
 # Education
@@ -31,15 +29,16 @@ knitr::opts_chunk$set(echo = TRUE)
 - GPA: 3.89                  
 - Bachelor of Arts Expected December 2021      
 
-## Majors: 
+#### Majors: 
 International Studies and Political Science. 
-## Concentrations:
-HRH and International Development 
 
-## Honors: 
+#### Concentrations:
+HRH and International Development. 
+
+#### Honors: 
 Kofi Annan scholarship awarded for history of academic and personal excellence. Davis Scholarship awarded to successful graduates from United World College to perpetuate the diversity mission in institutions for higher education. Dean’s list Fall 2018, Spring 2019, Fall 2019. Spring 2020, Fall 2020.
 
-## Coursework: 
+#### Coursework: 
 
 Intl. Codes of Conduct, Intro to Data Science, Empirical Research Methods, Statistical Modelling, Political Economy of Development, Core Concepts of Computer Science. 
 
@@ -49,9 +48,7 @@ Intl. Codes of Conduct, Intro to Data Science, Empirical Research Methods, Stati
 - International Baccalaureate (IB) Bilingual Diploma completed June 2018 
 - Scholarship granted by the Argentine National Committee to attend UWC for 2 years along with peers from 100+ countries. 
 
-
-
-# Contact 
+## Contact 
 
 Email me at mtorresj@macalester.edu 
 
