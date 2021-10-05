@@ -64,3 +64,4 @@ I filtered the information for only the year of 2020 because due to the pandemic
 The heatmap shows that in general, the states that hired the most also paid the most to nurses in 2020, which are located at the top, with New York leading the map. It is super interesting to analyze what patterns emerge thorugh the graphing of this data. 
 
 
+Link to Data: https://github.com/rfordatascience/tidytuesday/tree/master/data/2021/2021-10-05
