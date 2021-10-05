@@ -7,6 +7,9 @@ navbar:
     menu: 
     - text: TidyTuesday2
       href: TidyTuesday2.html
+    - text: TidyTuesday3
+      href: TidyTuesday3.html
+      
 output: html_document
 
 

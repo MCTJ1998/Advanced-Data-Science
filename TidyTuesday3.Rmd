@@ -10,12 +10,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 library(tidyverse)
 library(dplyr)
 library(tidytuesdayR)
 library(ggplot2)
-library(tidyverse)
 library(devtools) 
 library(openintro)
 library(ggthemes)
@@ -23,19 +22,17 @@ library(gplots)
 library(janitor)
 library(RColorBrewer) 
 library(ggmosaic) #NEW! Enhanced barplot
-library(tidyverse)
 library(gridExtra) 
 library(ggridges) 
-library(devtools)
 ```
 
 
 ## Registered Nurses 
 
-```{r cars}
+```{r cars, message=FALSE, warning=FALSE}
 nurses <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-10-05/nurses.csv')
 ```
-#Heat Map
+# Heat Map
 
 ```{r}
 nurses <- nurses %>% clean_names()
@@ -52,7 +49,7 @@ nur_long <-
                values_to = 'values')
 ```
 
-```{r,fig.height=8, fig.width=8.5}
+```{r,fig.height=8, fig.width=10}
 nur_long %>% 
   ggplot(aes(x = variables, y = fct_reorder(state, values, mean))) +
   geom_tile(aes(fill = values)) +

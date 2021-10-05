@@ -276,66 +276,25 @@ $(document).ready(function () {
 </div>
 
 
-<pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──</code></pre>
-<pre><code>## ✓ ggplot2 3.3.5     ✓ purrr   0.3.4
-## ✓ tibble  3.1.4     ✓ dplyr   1.0.7
-## ✓ tidyr   1.1.3     ✓ stringr 1.4.0
-## ✓ readr   2.0.1     ✓ forcats 0.5.1</code></pre>
-<pre><code>## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-## x dplyr::filter() masks stats::filter()
-## x dplyr::lag()    masks stats::lag()</code></pre>
-<pre class="r"><code>library(dplyr)
+<pre class="r"><code>library(tidyverse)
+library(dplyr)
 library(tidytuesdayR)
 library(ggplot2)
-library(tidyverse)
-library(devtools) </code></pre>
-<pre><code>## Loading required package: usethis</code></pre>
-<pre><code>## 
-## Attaching package: &#39;devtools&#39;</code></pre>
-<pre><code>## The following object is masked from &#39;package:tidytuesdayR&#39;:
-## 
-##     github_pat</code></pre>
-<pre class="r"><code>library(openintro)</code></pre>
-<pre><code>## Loading required package: airports</code></pre>
-<pre><code>## Loading required package: cherryblossom</code></pre>
-<pre><code>## Loading required package: usdata</code></pre>
-<pre class="r"><code>library(ggthemes)
-library(gplots) </code></pre>
-<pre><code>## 
-## Attaching package: &#39;gplots&#39;</code></pre>
-<pre><code>## The following object is masked from &#39;package:stats&#39;:
-## 
-##     lowess</code></pre>
-<pre class="r"><code>library(janitor)</code></pre>
-<pre><code>## 
-## Attaching package: &#39;janitor&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:stats&#39;:
-## 
-##     chisq.test, fisher.test</code></pre>
-<pre class="r"><code>library(RColorBrewer) 
+library(devtools) 
+library(openintro)
+library(ggthemes)
+library(gplots) 
+library(janitor)
+library(RColorBrewer) 
 library(ggmosaic) #NEW! Enhanced barplot
-library(tidyverse)
-library(gridExtra) </code></pre>
-<pre><code>## 
-## Attaching package: &#39;gridExtra&#39;</code></pre>
-<pre><code>## The following object is masked from &#39;package:dplyr&#39;:
-## 
-##     combine</code></pre>
-<pre class="r"><code>library(ggridges) 
-library(devtools)</code></pre>
+library(gridExtra) 
+library(ggridges) </code></pre>
 <div id="registered-nurses" class="section level2">
 <h2>Registered Nurses</h2>
 <pre class="r"><code>nurses &lt;- readr::read_csv(&#39;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-10-05/nurses.csv&#39;)</code></pre>
-<pre><code>## Rows: 1242 Columns: 22</code></pre>
-<pre><code>## ── Column specification ────────────────────────────────────────────────────────
-## Delimiter: &quot;,&quot;
-## chr  (1): State
-## dbl (21): Year, Total Employed RN, Employed Standard Error (%), Hourly Wage ...</code></pre>
-<pre><code>## 
-## ℹ Use `spec()` to retrieve the full column specification for this data.
-## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-<p>#Heat Map</p>
+</div>
+<div id="heat-map" class="section level1">
+<h1>Heat Map</h1>
 <pre class="r"><code>nurses &lt;- nurses %&gt;% clean_names()</code></pre>
 <pre class="r"><code>nur_long &lt;-
   nurses %&gt;% 
@@ -351,7 +310,7 @@ library(devtools)</code></pre>
   scale_fill_gradient2() +
   theme_minimal() +
   ylab(&quot;State&quot;)</code></pre>
-<p><img src="TidyTuesday3_files/figure-html/unnamed-chunk-4-1.png" width="816" /> This heatmap shows 4 variables in their scaled form, for each state. Each variable (column) is scaled to indicate states (rows) with high values (Purple) to low values (red/pink). This allows the audience to scan across rows &amp; across columns to visually assess which states &amp; variables are related, respectively.</p>
+<p><img src="TidyTuesday3_files/figure-html/unnamed-chunk-4-1.png" width="960" /> This heatmap shows 4 variables in their scaled form, for each state. Each variable (column) is scaled to indicate states (rows) with high values (Purple) to low values (red/pink). This allows the audience to scan across rows &amp; across columns to visually assess which states &amp; variables are related, respectively.</p>
 <p>I filtered the information for only the year of 2020 because due to the pandemic, the highering and the salary of nurses went up significantly in the US in general, but I wanted to compare each indeividual State. The variables I chose to show the variation were Average Annual Salary, the Median Hourly Wage, Total number of new Nurses employed and the Aggregate of total nurses employed yearly.</p>
 <p>The heatmap shows that in general, the states that hired the most also paid the most to nurses in 2020, which are located at the top, with New York leading the map. It is super interesting to analyze what patterns emerge thorugh the graphing of this data.</p>
 </div>
